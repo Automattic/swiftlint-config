@@ -46,6 +46,10 @@ only_rules:
 control_statement:
   severity: error
 
+trailing_whitespace:
+  ignores_empty_lines: false
+  ignores_comments: false
+
 custom_rules:
 
   natural_content_alignment:
