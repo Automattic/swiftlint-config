@@ -1,11 +1,13 @@
 # Project configuration
+#
 excluded:
   - Pods
   - Scripts
   - vendor
   - DerivedData
 
-# Rules
+# Rules – Opt-in only, so we can progressively introduce new ones
+#
 only_rules:
   # Colons should be next to the identifier when specifying a type.
   - colon
@@ -42,7 +44,7 @@ only_rules:
   - custom_rules
 
 # Rules configuration
-
+#
 control_statement:
   severity: error
 
@@ -50,8 +52,9 @@ trailing_whitespace:
   ignores_empty_lines: false
   ignores_comments: false
 
+# Custom rules
+#
 custom_rules:
-
   natural_content_alignment:
     name: "Natural Content Alignment"
     regex: '\.contentHorizontalAlignment(\s*)=(\s*)(\.left|\.right)'
