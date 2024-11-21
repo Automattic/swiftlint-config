@@ -35,6 +35,9 @@ only_rules:
   # the declaration.
   - opening_brace
 
+  # Prefer `if let x` to `if let x = x`, `if let self` to `if let strongSelf = self`, etc.
+  - shorthand_optional_binding
+
   # Files should have a single trailing newline.
   - trailing_newline
 
